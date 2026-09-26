@@ -12,6 +12,39 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.retinaadvisors.com">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Retina Advisors",
+  "url": "https://www.retinaadvisors.com",
+  "founder": {
+    "@type": "Person",
+    "name": "Bryan Shapiro"
+  },
+  "mentions": [
+    {
+      "@type": "CreativeWork",
+      "headline": "HCC Course Explores Risks to Businesses in the AI Age",
+      "url": "https://businesswest.com/blog/hcc-course-explores-risks-to-businesses-in-ai-age/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "BusinessWest"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "headline": "AI Scam Expert to Regular Folks, Small Businesses: Stay Aware",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/ai-scam-expert-regular-folks-203036599.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MassLive"
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -148,6 +181,7 @@
     font-size: 13px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+    margin: 0;
   }
 
   .eyebrow-label.on-light { color: var(--navy); }
@@ -363,6 +397,71 @@
     margin: 0;
   }
 
+  /* In the News */
+  .press-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 48px;
+  }
+
+  .press-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .press-outlet {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .press-frame {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .press-headline {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .press-headline a {
+    color: var(--navy);
+    text-decoration: none;
+  }
+
+  .press-headline a:hover {
+    text-decoration: underline;
+  }
+
+  .press-quote {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--muted);
+    border-left: 2px solid var(--sand);
+    padding-left: 16px;
+    margin: 0;
+  }
+
+  .press-link {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--navy);
+    text-decoration: none;
+  }
+
+  .press-link:hover {
+    text-decoration: underline;
+  }
+
   /* FAQ */
   .faq-item {
     border-top: 0.5px solid var(--line);
@@ -498,6 +597,11 @@
     }
 
     .fraud-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .press-grid {
       grid-template-columns: 1fr;
       gap: 32px;
     }
@@ -714,6 +818,31 @@
     </div>
     <p class="body-copy">We've built fraud programs and strategy from scratch, and advised companies on the best path forward, across every type of fraud there is. That range matters, because fraud doesn't have one road in. Block one path and it shows up somewhere else, so the whole picture has to be in view, not just one piece of it. Just as important, we look at it alongside how your business actually runs. Fraud touches customer service, product, operations, all of it, so the goal isn't to lock everything down, it's to find the right plan for your risk appetite and how you actually operate.</p>
     <p class="body-copy">We also built a <a href="https://app.retinaadvisors.com">free AI-powered chargeback analysis tool</a> for Stripe merchants.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">
+      <span class="eyebrow-dot"></span>
+      <h2 class="eyebrow-label on-light">In the news</h2>
+    </div>
+    <div class="eyebrow-rule"></div>
+    <div class="press-grid">
+      <article class="press-card">
+        <p class="press-outlet">BusinessWest</p>
+        <p class="press-frame">Bryan Shapiro was featured in BusinessWest discussing the AI fraud risk course he's co-teaching.</p>
+        <h3 class="press-headline"><a href="https://businesswest.com/blog/hcc-course-explores-risks-to-businesses-in-ai-age/" target="_blank" rel="noopener noreferrer">HCC Course Explores Risks to Businesses in the AI Age</a></h3>
+        <a class="press-link" href="https://businesswest.com/blog/hcc-course-explores-risks-to-businesses-in-ai-age/" target="_blank" rel="noopener noreferrer">Read the article &rarr;</a>
+      </article>
+      <article class="press-card">
+        <p class="press-outlet">MassLive</p>
+        <p class="press-frame">Bryan Shapiro was quoted in MassLive on how AI is accelerating scams targeting small businesses.</p>
+        <h3 class="press-headline"><a href="https://tech.yahoo.com/cybersecurity/articles/ai-scam-expert-regular-folks-203036599.html" target="_blank" rel="noopener noreferrer">AI Scam Expert to Regular Folks, Small Businesses: Stay Aware</a></h3>
+        <blockquote class="press-quote">"Be skeptical, and slow down when you're reading something if it feels urgent." - Bryan Shapiro</blockquote>
+        <a class="press-link" href="https://tech.yahoo.com/cybersecurity/articles/ai-scam-expert-regular-folks-203036599.html" target="_blank" rel="noopener noreferrer">Read the article &rarr;</a>
+      </article>
+    </div>
   </div>
 </section>
 
